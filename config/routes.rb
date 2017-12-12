@@ -33,9 +33,10 @@
 #                  PATCH  /planes/:id(.:format)            planes#update
 #                  PUT    /planes/:id(.:format)            planes#update
 #                  DELETE /planes/:id(.:format)            planes#destroy
-# 
+#
 
 Rails.application.routes.draw do
+  root :to => "pages#home"
   resources :reservations
   resources :users
   resources :flights
