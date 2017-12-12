@@ -16,6 +16,16 @@
     <%= form.text_field :seat, id: :reservation_seat %>
   </div>
 
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.collection_select :user_id, User.order(:name), :id, :name, include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flight_id %>
+    <%= form.collection_select :flight_id, Flight.order(:number), :id, :number, include_blank: true  %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
