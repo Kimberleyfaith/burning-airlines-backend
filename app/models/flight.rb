@@ -9,6 +9,7 @@
 #  date        :date
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  plane_id    :integer
 #
 
 class Flight < ApplicationRecord

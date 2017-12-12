@@ -5,6 +5,8 @@
 <table>
   <thead>
     <tr>
+      <th>Flight #</th>
+      <th>User</th>
       <th>Seat</th>
       <th colspan="3"></th>
     </tr>
@@ -13,6 +15,8 @@
   <tbody>
     <% @reservations.each do |reservation| %>
       <tr>
+        <td><%= link_to reservation.flight.number, flight_url(reservation.flight.id) %></td>
+        <td><%= link_to reservation.user.name, user_url(reservation.user.id) %></td>
         <td><%= reservation.seat %></td>
         <td><%= link_to 'Show', reservation %></td>
         <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
