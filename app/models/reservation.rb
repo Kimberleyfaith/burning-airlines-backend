@@ -15,4 +15,5 @@ class Reservation < ApplicationRecord
   belongs_to :user
 
   validates :seat, :presence => true, format: { with: /\A[A-Z]\d+\z/, message: "- Please enter seat number in the correct format, e.g. A1"}
+  validates_uniqueness_of :seat, :scope => [:flight_id]
 end
