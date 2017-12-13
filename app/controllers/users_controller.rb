@@ -11,7 +11,10 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @sorted_res = @user.reservations.sort_by { |r| r.flight.date }
-    render :json => @user.to_json(:include => { :reservations => {:include => :flight } })
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render :json => @user.to_json(:include => { :reservations => {:include => :flight } }) }
+    end
   end
 
   # GET /users/new
