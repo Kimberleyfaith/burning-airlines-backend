@@ -14,8 +14,9 @@ f4 = Flight.create :number => "B400", :origin => "New York", :destination => "Sy
 
 User.destroy_all
 
-u1 = User.create :name => "Jose"
-u2 = User.create :name => "Maddi"
+u1 = User.create :name => "Jose", :password => "chicken"
+u2 = User.create :name => "Maddi", :password => "chicken"
+u3 = User.create :name => "Craigsy", :password => "chicken"
 
 Reservation.destroy_all
 
