@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @sorted_res = @user.reservations.sort_by { |r| r.flight.date }
+    render :json => @user.to_json(:include => { :reservations => {:include => :flight } })
   end
 
   # GET /users/new
