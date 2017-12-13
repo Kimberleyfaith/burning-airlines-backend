@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @sorted_res = @user.reservations.sort_by { |r| r.flight.date }
   end
 
   # GET /users/new
