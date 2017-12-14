@@ -15,5 +15,18 @@
   <%= @plane.cols %>
 </p>
 
+<p><strong>Seat Map</strong></p>
+
+<div class="seat-map">
+  <% @plane.rows.times do %>
+    <div>
+      <% @plane.cols.times do %>
+        <span>O</span>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+
 <%= link_to 'Edit', edit_plane_path(@plane) %> |
 <%= link_to 'Back', planes_path %>
