@@ -1,24 +1,13 @@
-# README
+# Burning Airline Admin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository houses the backend for the General Assembly 'Burning Airlines' 2 day code challenge.
 
-Things you may want to cover:
+### Built with:
 
-* Ruby version
+Ruby on Rails
+Ruby v2.4.2
+Rails v5.1.4
 
-* System dependencies
+### Looking for the 'customer' side application?
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please check out [https://www.github.com/madeleinemila/burning-airlines](https://www.github.com/madeleinemila/burning-airlines)
