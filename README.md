@@ -1,5 +1,5 @@
 # BURNING AIRLINES
-## Administrator Application + Backend
+### Administrator Application + Backend
 
 This repository houses the backend for the General Assembly 'Burning Airlines' 2 day code challenge.
 
